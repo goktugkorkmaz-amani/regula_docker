@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  regula:
+    container_name: regula
+    image: regulaforensics/docreader:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./regula.license:/app/extBin/unix_x64/regula.license
